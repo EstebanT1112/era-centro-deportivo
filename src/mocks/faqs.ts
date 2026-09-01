@@ -1,0 +1,58 @@
+import type { Faq } from "@/types";
+
+export const faqs: Faq[] = [
+  {
+    id: "faq-reservas",
+    question: "¿Con cuánta anticipación puedo reservar?",
+    answer: "Los turnos de ejemplo pueden reservarse con hasta 30 días de anticipación.",
+    category: "reservas",
+    isFeatured: true,
+    isVisible: true,
+    order: 1,
+  },
+  {
+    id: "faq-pagos",
+    question: "¿Qué porcentaje se abona como seña?",
+    answer: "La seña representada en el prototipo corresponde al 50% del turno.",
+    category: "pagos",
+    isFeatured: true,
+    isVisible: true,
+    order: 1,
+  },
+  {
+    id: "faq-canchas",
+    question: "¿Las canchas cuentan con iluminación?",
+    answer: "Las canchas habilitadas para horarios nocturnos incluyen iluminación.",
+    category: "canchas",
+    isFeatured: true,
+    isVisible: true,
+    order: 1,
+  },
+  {
+    id: "faq-horarios",
+    question: "¿Cuál es el horario general del centro deportivo?",
+    answer: "Espacio ERA abre todos los días de 8:00 a 23:00.",
+    category: "horarios",
+    isFeatured: true,
+    isVisible: true,
+    order: 1,
+  },
+  {
+    id: "faq-tienda",
+    question: "¿Cómo consulto por un producto?",
+    answer: "Las consultas de tienda se coordinarán por WhatsApp en el prototipo.",
+    category: "tienda",
+    isFeatured: true,
+    isVisible: true,
+    order: 1,
+  },
+  {
+    id: "faq-club",
+    question: "¿El centro deportivo dispone de estacionamiento?",
+    answer: "Sí, hay estacionamiento sujeto a disponibilidad durante los horarios de mayor demanda.",
+    category: "club",
+    isFeatured: false,
+    isVisible: false,
+    order: 1,
+  },
+];

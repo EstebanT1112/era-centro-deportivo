@@ -1,0 +1,68 @@
+import { SITE_IMAGES } from "@/constants/assets";
+import type { Product } from "@/types";
+
+export const products: Product[] = [
+  {
+    id: "product-camiseta-2026",
+    name: "Camiseta Oficial 2026",
+    slug: "camiseta-oficial-2026",
+    price: 65000,
+    category: "Indumentaria",
+    description: "Camiseta representativa de ERA confeccionada en tejido deportivo liviano, pensada para entrenar y acompañar al equipo.",
+    images: [SITE_IMAGES.products.jersey],
+    variants: [
+      { label: "Talle S", available: true },
+      { label: "Talle M", available: true },
+      { label: "Talle L", available: false },
+    ],
+    isAvailable: true,
+    isFeatured: true,
+    isVisible: true,
+  },
+  {
+    id: "product-short-entrenamiento",
+    name: "Short de Entrenamiento",
+    slug: "short-entrenamiento",
+    price: 32000,
+    category: "Indumentaria",
+    description: "Short liviano de entrenamiento con cintura elástica y calce cómodo para partidos y prácticas.",
+    images: [SITE_IMAGES.products.trainingShorts],
+    variants: [
+      { label: "Talle M", available: true },
+      { label: "Talle L", available: true },
+      { label: "Talle XL", available: true },
+    ],
+    isAvailable: true,
+    isFeatured: true,
+    isVisible: true,
+  },
+  {
+    id: "product-buzo-oficial",
+    name: "Buzo Oficial",
+    slug: "buzo-oficial",
+    price: 89000,
+    category: "Abrigos",
+    description: "Buzo institucional de abrigo con terminaciones reforzadas y colores oficiales de ERA.",
+    images: [SITE_IMAGES.products.sweatshirt],
+    variants: [
+      { label: "Talle M", available: false },
+      { label: "Talle L", available: false },
+    ],
+    isAvailable: false,
+    isFeatured: false,
+    isVisible: false,
+  },
+  {
+    id: "product-pelota-entrenamiento",
+    name: "Pelota de Entrenamiento",
+    slug: "pelota-entrenamiento",
+    price: 28000,
+    category: "Accesorios",
+    description: "Pelota número 5 para entrenamiento recreativo y práctica técnica en césped sintético.",
+    images: [SITE_IMAGES.products.trainingBall],
+    variants: [{ label: "Número 5", available: true }],
+    isAvailable: true,
+    isFeatured: true,
+    isVisible: true,
+  },
+];
