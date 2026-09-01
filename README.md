@@ -1,4 +1,4 @@
-# Club Deportivo — Sitio Web, Reservas y Gestión Administrativa
+# Centro Deportivo — Sitio Web, Reservas y Gestión Administrativa
 
 Plataforma web para un club deportivo que integra en una única experiencia el sitio institucional, la presentación de disciplinas y canchas, un flujo de reservas, contenidos públicos, tienda informativa y un panel administrativo completo.
 
