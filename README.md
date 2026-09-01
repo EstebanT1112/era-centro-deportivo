@@ -1,6 +1,6 @@
-# Centro Deportivo — Sitio Web, Reservas y Gestión Administrativa
+# Espacio ERA — Sitio Web, Reservas y Gestión Administrativa
 
-Plataforma web para un club deportivo que integra en una única experiencia el sitio institucional, la presentación de disciplinas y canchas, un flujo de reservas, contenidos públicos, tienda informativa y un panel administrativo completo.
+Prototipo web para Espacio ERA, un centro deportivo de Villa Elisa que integra en una única experiencia el sitio institucional, la presentación de disciplinas y canchas, un flujo de reservas, contenidos públicos, tienda informativa y un panel administrativo completo.
 
 El proyecto fue desarrollado inicialmente como un **prototipo frontend de alta fidelidad**, con el objetivo de validar arquitectura de información, experiencia de usuario, diseño responsive, navegación y flujos operativos antes de incorporar la infraestructura productiva.
 
@@ -8,7 +8,7 @@ El proyecto fue desarrollado inicialmente como un **prototipo frontend de alta f
 
 ## Descripción
 
-La plataforma está pensada para centralizar las principales necesidades digitales de un club deportivo.
+La plataforma está pensada para centralizar las principales necesidades digitales del centro deportivo.
 
 Desde el sitio público, una persona puede:
 
@@ -44,7 +44,7 @@ Desde el panel administrativo, el club puede gestionar visualmente:
 - historial;
 - configuración general.
 
-> **Importante:** la versión actual funciona como prototipo frontend. Los datos, pagos, autenticación y operaciones administrativas se encuentran simulados mediante mocks y estado local.
+> **Importante:** la versión actual funciona como prototipo frontend. Los datos, pagos, autenticación y operaciones administrativas se encuentran simulados mediante mocks y estado local. El panel administrativo no posee seguridad real, sus rutas pueden abrirse directamente y no deben utilizarse con datos sensibles ni en producción.
 
 ---
 
@@ -95,17 +95,13 @@ Ruta:
 
 # Disciplinas
 
-La sección de Disciplinas funciona como un catálogo de las actividades deportivas ofrecidas por el club.
+La sección de Disciplinas funciona como un catálogo de las actividades deportivas ofrecidas por el centro deportivo.
 
-Ejemplos:
+Actualmente incluye:
 
 - Fútbol.
 - Hockey.
 - Vóley.
-- Básquet.
-- Patín.
-- Gimnasia.
-- Otras actividades institucionales.
 
 Ruta principal:
 
@@ -448,7 +444,7 @@ Dashboard:
 /admin
 ```
 
-> La autenticación actual es únicamente visual/simulada.
+> La autenticación actual es únicamente visual/simulada. El formulario no valida credenciales reales y las rutas administrativas no están protegidas.
 
 ---
 
@@ -835,9 +831,8 @@ Tailwind CSS
 shadcn/ui
 Lucide Icons
 React
+Motion
 ```
-
-También puede utilizar Motion para animaciones puntuales cuando aportan valor.
 
 ---
 
@@ -978,22 +973,20 @@ Durante el desarrollo se contemplan criterios como:
 Clonar el repositorio:
 
 ```bash
-git clone https://github.com/EstebanT1112/era-club-deportivo
-cd era-centro-deportivo
+git clone https://github.com/EstebanT1112/era-club-deportivo.git
+cd era-club-deportivo
 ```
 
-Instalar dependencias utilizando el package manager configurado en el proyecto.
-
-Por ejemplo:
+Instalar las dependencias:
 
 ```bash
-pnpm install
+npm install
 ```
 
 Ejecutar el entorno de desarrollo:
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 Abrir:
@@ -1002,26 +995,18 @@ Abrir:
 http://localhost:3000
 ```
 
-> Si el proyecto utiliza otro package manager, utilizar los scripts equivalentes definidos en `package.json`.
-
 ---
 
 # Scripts
 
-Consultar `package.json` para conocer los scripts disponibles.
-
-Los principales deberían ser equivalentes a:
+Los scripts disponibles son:
 
 ```bash
-pnpm dev
-pnpm lint
-pnpm build
-```
-
-Si existe un script específico de TypeScript:
-
-```bash
-pnpm typecheck
+npm run dev
+npm run lint
+npm run typecheck
+npm run build
+npm run start
 ```
 
 ---
